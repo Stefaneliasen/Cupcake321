@@ -1,0 +1,44 @@
+#center {
+    margin-top: 15vh;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    text-align: center;
+    background-color: #2d1c02;
+    padding: 100px;
+}
+#background, body, head{
+    background-color: #382304;
+}
+
+img{
+    height: 125px;
+    width: 100px;
+    margin-left: 60vw;
+    margin-top: 250px;
+    float: left;
+}
+label, h2, h1, h3{
+    color: #fce9cc;
+}
+ul {
+    list-style-type: none;
+    width: 100vw;
+    background-color: #382304;
+    display: inline;
+}
+
+li a {
+    display: inline;
+    color: #fce9cc;
+    padding: 8px 16px;
+
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color:#2d1c02;
+    color:white;
+}
+#loginButton{
+
+}
