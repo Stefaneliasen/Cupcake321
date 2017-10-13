@@ -4,7 +4,6 @@
     Author     : Arne
 --%>
 <%@page import="model.Cart"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="model.Orderline"%>
 <%@page import="model.Topping"%>
 <%@page import="model.Bottom"%>

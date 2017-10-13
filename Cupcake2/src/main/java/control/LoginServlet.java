@@ -108,7 +108,7 @@ public class LoginServlet extends HttpServlet {
     private void sendLoginForm(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try (PrintWriter out = response.getWriter()) {
             try {
-                RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
                 rd.forward(request, response);
 
             } catch (IOException | ServletException e) {
@@ -116,7 +116,6 @@ public class LoginServlet extends HttpServlet {
             }
         }
     }
-
     private void sendFrontPage(HttpServletRequest request, HttpServletResponse response) {
         try {
 

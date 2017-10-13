@@ -34,22 +34,13 @@ public class RegisterServlet extends HttpServlet {
             dm.registerUser(username, password, admin, userId, balance, email);
             user = dm.getUser(username);
             request.getSession().setAttribute("user", user);
-            sendFrontPage(request, response);
+            sendLoginForm(request, response);
             if (user == null) {
                 //registration fail
                 sendRegisterForm(request, response);
             } else {
                 sendFrontPage(request, response);
             }
-
-        }
-
-        if (user == null) {
-            //Login Fail
-            sendLoginForm(request, response);
-        }
-        if (action == null) {
-            sendFrontPage(request, response);
         }
     }
 
@@ -95,7 +86,7 @@ public class RegisterServlet extends HttpServlet {
     private void sendLoginForm(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try (PrintWriter out = response.getWriter()) {
             try {
-                RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
                 rd.forward(request, response);
 
             } catch (IOException | ServletException e) {

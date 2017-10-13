@@ -21,7 +21,6 @@ public class UserMapper {
     public UserMapper() {
         con = new DB().getConnection();
     }
-
     public User getUser(String u) {
         ResultSet rs = null;
         PreparedStatement stmt = null;
